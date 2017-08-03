@@ -1,0 +1,21 @@
+Docker - Push
+--------------
+docker push vijaydoc/spring-boot-docker-webapp:v1
+
+Docker-Run
+-----------
+docker run -it --name eg1 -p 8080:8080 vijaydoc/spring-boot-docker-webapp:v1
+ 
+ Linking
+ -------
+ docker run it --name vijaydoc/spring-boot-docker-webapp:latest --link sql10187921:mysql -p 8080:8080 vijaydoc/spring-boot-docker-webapp:latest
+ 
+Docker-Remove Container
+------------------------
+ docker rm -f f57d09fef97b
+
+Check the host url is working or not
+-------------------------------------
+  exec 6<>dev/tcp/sql101.freemysqlhosting.net/3306
+  exec 6<>/dev/tcp/www.google.com/80
+  

@@ -1,0 +1,4 @@
+com\dockeg\SpringBootJpaWebappApplication.class
+com\dockeg\entity\Superhero.class
+com\dockeg\controller\SuperheroController.class
+com\dockeg\repository\SuperheroRepository.class

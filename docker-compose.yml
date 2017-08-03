@@ -1,0 +1,22 @@
+version: '2.1'
+
+services: 
+  sql10187921:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=XhcNnlbNGJ
+      - MYSQL_DATABASE=sql10187921
+      - MYSQL_USER=sql10187921
+      - MYSQL_PASSWORD=
+  spring-boot-jpa-docker-webapp:
+    image: vijaydoc/spring-boot-docker-webapp
+    depends_on:
+      - sql10187921
+    ports:
+      - 8080:8080
+    environment:
+      - DATABASE_HOST=sql10.freemysqlhosting.net
+      - DATABASE_USER=sql10187921
+      - DATABASE_PASSWORD=XhcNnlbNGJ
+      - DATABASE_NAME=sql10187921
+      - DATABASE_PORT=3306
